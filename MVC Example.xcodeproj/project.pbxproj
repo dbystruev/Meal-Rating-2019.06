@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		69AFC76622A6E3F600279389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFC76522A6E3F600279389 /* AppDelegate.swift */; };
-		69AFC76822A6E3F600279389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFC76722A6E3F600279389 /* ViewController.swift */; };
 		69AFC76B22A6E3F600279389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AFC76922A6E3F600279389 /* Main.storyboard */; };
 		69AFC76D22A6E3FB00279389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AFC76C22A6E3FB00279389 /* Assets.xcassets */; };
 		69AFC77022A6E3FB00279389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AFC76E22A6E3FB00279389 /* LaunchScreen.storyboard */; };
+		69AFC77D22A6E54E00279389 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFC77C22A6E54E00279389 /* Meal.swift */; };
+		69AFC77F22A6E67800279389 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFC77E22A6E67800279389 /* MealViewController.swift */; };
+		69AFC78122A6E7F500279389 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFC78022A6E7F500279389 /* DataController.swift */; };
+		69AFC78322A6EC8100279389 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFC78222A6EC8100279389 /* CellController.swift */; };
+		69AFC78622A6F67B00279389 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFC78522A6F67B00279389 /* MealDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		69AFC76222A6E3F600279389 /* MVC Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AFC76522A6E3F600279389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69AFC76722A6E3F600279389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		69AFC76A22A6E3F600279389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69AFC76C22A6E3FB00279389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69AFC76F22A6E3FB00279389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69AFC77122A6E3FB00279389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69AFC77C22A6E54E00279389 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		69AFC77E22A6E67800279389 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
+		69AFC78022A6E7F500279389 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		69AFC78222A6EC8100279389 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		69AFC78522A6F67B00279389 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,66 @@
 		69AFC76422A6E3F600279389 /* MVC Example */ = {
 			isa = PBXGroup;
 			children = (
-				69AFC76522A6E3F600279389 /* AppDelegate.swift */,
-				69AFC76722A6E3F600279389 /* ViewController.swift */,
-				69AFC76922A6E3F600279389 /* Main.storyboard */,
-				69AFC76C22A6E3FB00279389 /* Assets.xcassets */,
-				69AFC76E22A6E3FB00279389 /* LaunchScreen.storyboard */,
-				69AFC77122A6E3FB00279389 /* Info.plist */,
+				69AFC77722A6E46000279389 /* App */,
+				69AFC77B22A6E50300279389 /* Model */,
+				69AFC77A22A6E4A800279389 /* Resources */,
+				69AFC77822A6E48200279389 /* Other Controllers */,
+				69AFC77922A6E49E00279389 /* View */,
+				69AFC78422A6F56100279389 /* View Controllers */,
 			);
 			path = "MVC Example";
+			sourceTree = "<group>";
+		};
+		69AFC77722A6E46000279389 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				69AFC76522A6E3F600279389 /* AppDelegate.swift */,
+				69AFC77122A6E3FB00279389 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		69AFC77822A6E48200279389 /* Other Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69AFC78222A6EC8100279389 /* CellController.swift */,
+				69AFC78022A6E7F500279389 /* DataController.swift */,
+			);
+			path = "Other Controllers";
+			sourceTree = "<group>";
+		};
+		69AFC77922A6E49E00279389 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69AFC76922A6E3F600279389 /* Main.storyboard */,
+				69AFC76E22A6E3FB00279389 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69AFC77A22A6E4A800279389 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69AFC76C22A6E3FB00279389 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69AFC77B22A6E50300279389 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69AFC77C22A6E54E00279389 /* Meal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69AFC78422A6F56100279389 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69AFC77E22A6E67800279389 /* MealViewController.swift */,
+				69AFC78522A6F67B00279389 /* MealDetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69AFC76822A6E3F600279389 /* ViewController.swift in Sources */,
+				69AFC77D22A6E54E00279389 /* Meal.swift in Sources */,
+				69AFC78122A6E7F500279389 /* DataController.swift in Sources */,
+				69AFC78622A6F67B00279389 /* MealDetailViewController.swift in Sources */,
 				69AFC76622A6E3F600279389 /* AppDelegate.swift in Sources */,
+				69AFC77F22A6E67800279389 /* MealViewController.swift in Sources */,
+				69AFC78322A6EC8100279389 /* CellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = "MVC Example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVC Example/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = "MVC Example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVC Example/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
